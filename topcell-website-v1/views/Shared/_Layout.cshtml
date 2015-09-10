@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="~/Content/normalize.css" rel="stylesheet" />
+    <link href="~/Content/foundation.css" rel="stylesheet" />
+    <script src="~/Scripts/modernizr.js"></script>
+
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    @{ Html.RenderPartial("_HeaderPartial"); }
+    <div>
+        @RenderBody()
+    </div>
+
+    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+    <script src="~/Scripts/foundation/foundation.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+</body>
+</html>
